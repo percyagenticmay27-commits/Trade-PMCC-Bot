@@ -1,0 +1,40 @@
+{
+  "strategy_id": "PMCC-001",
+  "display_name": "Trade PMCC Bot",
+  "initial_capital": 5000,
+  "paper_trade_mode": true,
+  "live_trading_enabled": false,
+  "broker_execution_enabled": false,
+  "order_placement_enabled": false,
+  "capital_movement_enabled": false,
+  "position_cap": 0.25,
+  "sector_cap": 0.4,
+  "cash_reserve": 0.2,
+  "max_underlyings": 4,
+  "long_stop": 0.25,
+  "campaign_stop": 0.2,
+  "short_profit_capture": 0.5,
+  "campaign_profit_target": 0.5,
+  "fee_per_contract": 0.65,
+  "regulatory_fee_per_contract": 0,
+  "entry_time_et": "10:00",
+  "universe": [
+    "F",
+    "CCC",
+    "IOVA",
+    "ADT",
+    "VTRS",
+    "AVTR",
+    "NWL",
+    "FRSH",
+    "ASAN",
+    "LFST",
+    "CLBK"
+  ],
+  "discovery_source": "/home/tradebot/Trade-Dividend-Bot/market_data_snapshot.json",
+  "weekly_entries": true,
+  "long_dte": [
+    180,
+    365
+  ]
+}

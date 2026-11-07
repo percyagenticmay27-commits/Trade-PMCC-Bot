@@ -1,0 +1,89 @@
+{
+  "strategy_id": "PMCC-001",
+  "plugin_id": "PMCC-001",
+  "display_name": "Trade PMCC Bot",
+  "strategy_type": "PMCC",
+  "service_type": "STRATEGY_PLUGIN",
+  "plugin_type": "STRATEGY_PLUGIN",
+  "strategy_plugin": true,
+  "version": "1.0.0",
+  "lifecycle_status": "REGISTERED",
+  "runtime_status": "ONLINE",
+  "health_status": "DATA_UNAVAILABLE",
+  "readiness": "AWAITING_VERIFIED_MARKET_EVIDENCE",
+  "enabled": true,
+  "plugin_contract_version": "2.0",
+  "repository_root": "/home/tradebot/Trade-PMCC-Bot",
+  "allocated_capital": 5000,
+  "capabilities": [
+    "executive_dashboard",
+    "discovery",
+    "watchlist",
+    "executive_board",
+    "portfolio_allocations",
+    "position_lifecycle",
+    "strategy_kpis",
+    "trade_analytics",
+    "decision_journal",
+    "alerts",
+    "market_data_status",
+    "settings"
+  ],
+  "dashboard_artifacts": [
+    {
+      "artifact_id": "executive_dashboard",
+      "artifact_type": "executive_dashboard",
+      "path": "results/pmcc_report.json",
+      "format": "json",
+      "scope": "STRATEGY",
+      "authoritative": true,
+      "required": true
+    },
+    {
+      "artifact_id": "strategy_kpis",
+      "artifact_type": "strategy_kpis",
+      "path": "results/pmcc_summary.json",
+      "format": "json",
+      "scope": "STRATEGY",
+      "authoritative": true,
+      "required": true
+    },
+    {
+      "artifact_id": "watchlist",
+      "artifact_type": "watchlist",
+      "path": "results/pmcc_watchlist.json",
+      "format": "json",
+      "scope": "STRATEGY",
+      "authoritative": true,
+      "required": true
+    },
+    {
+      "artifact_id": "position_lifecycle",
+      "artifact_type": "position_lifecycle",
+      "path": "results/pmcc_positions.json",
+      "format": "json",
+      "scope": "STRATEGY",
+      "authoritative": true,
+      "required": true
+    },
+    {
+      "artifact_id": "executive_board",
+      "artifact_type": "executive_board",
+      "path": "results/pmcc_board.json",
+      "format": "json",
+      "scope": "STRATEGY",
+      "authoritative": true,
+      "required": true
+    }
+  ],
+  "paper_trade_mode": true,
+  "paper_compatible": true,
+  "advisory_only": true,
+  "reporting_only": true,
+  "live_trading_enabled": false,
+  "broker_execution_enabled": false,
+  "order_placement_enabled": false,
+  "capital_movement_enabled": false,
+  "automatic_activation_allowed": false,
+  "direct_database_writes": false
+}

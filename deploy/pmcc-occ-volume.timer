@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh completed OCC sessions after publication and before the trading day
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 07:45:00 America/Chicago
+OnCalendar=Mon..Fri *-*-* 18:30:00 America/Chicago
+Persistent=true
+
+[Install]
+WantedBy=timers.target

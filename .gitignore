@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+state/
+results/
+inputs/
+research/
+*.tar.gz

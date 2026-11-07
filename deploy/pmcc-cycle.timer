@@ -1,0 +1,9 @@
+[Unit]
+Description=Check PMCC paper portfolio every five minutes; entry at 10 ET
+[Timer]
+OnCalendar=Mon..Fri *-*-* *:00/5:00
+Persistent=false
+AccuracySec=1s
+Unit=pmcc-cycle.service
+[Install]
+WantedBy=timers.target

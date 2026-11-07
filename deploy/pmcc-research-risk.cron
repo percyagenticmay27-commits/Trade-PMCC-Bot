@@ -1,0 +1,3 @@
+# Bootstrap for the verified America/Chicago server timezone. Session-specific
+# risk and closing-review lines are generated from the official daily calendar.
+15,20,25 8 * * 1-5 cd /home/tradebot/Trade-PMCC-Bot && /usr/bin/python3 -m pmcc research-schedule --install >/dev/null 2>&1 # PMCC_RESEARCH_SCHEDULE_001

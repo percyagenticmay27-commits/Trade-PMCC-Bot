@@ -1,0 +1,9 @@
+[Unit]
+Description=Refresh Ford OCC options volume
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Trade-PMCC-Bot
+ExecStart=/usr/bin/python3 -m pmcc.occ_refresh
+UMask=0077
+NoNewPrivileges=true

@@ -1,0 +1,76 @@
+{
+  "recorded_at": "2026-11-03T20:37:44.307948+00:00",
+  "strategy_id": "PMCC-001",
+  "source_hashes": {
+    "pmcc/__init__.py": "fda317318139e507e39f06921d6360c98692cb84564fc396bbb9cafa88eba74b",
+    "pmcc/__main__.py": "fe9c0b59b8ef3a572d07897a3bdda9ef74bef0e223b8f6d618e1b09429bc4548",
+    "pmcc/alpaca_data.py": "4fc722ab61a3ca8c723899b078c8a052c5366fd679e79e651ad16b42dc66fad9",
+    "pmcc/collector.py": "26a2949afde5518d3c3a5f3ab3535f9c5c1d8b14d278b1ba1569d403c1855781",
+    "pmcc/dashboard.py": "8ed2e5c2a177c25a97a0345eea2cc372de0bddef0f88cc7ec6cd37d1844ca26d",
+    "pmcc/ledger.py": "f274a7fe7abad9e23f6f326f401687097215fedfe43befaf9a1d0d4c57514751",
+    "pmcc/management.py": "cb80169d4e676772a9e9efcedab58a2ef9f5fac05636b846b5fed84c0b3386b4",
+    "pmcc/market_clock.py": "ac0478be77844cac90e838cad58aeb490373f1ad4afe3468290a31b6e2cd2828",
+    "pmcc/provider.py": "a5780340a7b4e7b6d233be5b91a92c948e01bbced94811bb8315c5c386e17a62",
+    "pmcc/runtime.py": "e1c6d12cc1db7e991391e66b1e03aab915d78c5fd2d9e773c06f054fd6677dad",
+    "pmcc/strategy.py": "298ab1071daa4eed18aa630a51f2f33995feffc4deb3d166ecbe952f9aca3bc8"
+  },
+  "tests": {
+    "pmcc": 64,
+    "cio_registry_kpi_workspace": 56,
+    "cio_cash_governance_routes": 40
+  },
+  "allocation": {
+    "DIVIDEND-001": 5000,
+    "OPTION-001": 4000,
+    "PMCC-001": 5000,
+    "SWING-001": 4500
+  },
+  "pmcc_cash": 5000,
+  "portfolio_value": 5000,
+  "open_positions": 0,
+  "closed_positions": 0,
+  "flags": {
+    "paper_trade_mode": true,
+    "live_trading_enabled": false,
+    "broker_execution_enabled": false,
+    "order_placement_enabled": false,
+    "capital_movement_enabled": false
+  },
+  "running_portal_http": 404,
+  "timer": "active",
+  "service_execution": "Result=success\nExecMainStatus=0\nExecStartPre={ path=/usr/bin/python3 ; argv[]=/usr/bin/python3 -m pmcc refresh ; ignore_errors=yes ; start_time=[Tue 2026-11-03 14:35:00 CST] ; stop_time=[Tue 2026-11-03 14:35:02 CST] ; pid=2579676 ; code=exited ; status=0 }\n",
+  "registry_strategy_ids": [
+    "DIVIDEND-001",
+    "OPTION-001",
+    "PMCC-001",
+    "SWING-001"
+  ],
+  "collector": {
+    "status": "COLLECTED",
+    "observed_at": "2026-11-03T20:35:01.179826+00:00",
+    "source": "ALPACA_MARKET_DATA",
+    "symbols": {
+      "F": {
+        "metadata_contracts": 155,
+        "quotes_returned": 155,
+        "fresh_quotes": 135,
+        "current_iv30": 0.29250347787920156,
+        "iv_history_observations": 0,
+        "issuer_evidence_supplied": false,
+        "completed_bars": 344,
+        "reasons": []
+      }
+    },
+    "credential_values_logged": false
+  },
+  "data_status": "DATA_UNAVAILABLE",
+  "market_session": "OPEN",
+  "automatic_market_collector": "INSTALLED_AND_RUNNING_EXISTING_READ_ONLY_ALPACA_ACCESS",
+  "remaining": [
+    "ADMINISTRATOR_PORTAL_RESTART",
+    "VERIFIED_ISSUER_EVENTS",
+    "252_SESSION_COMPATIBLE_IV_HISTORY",
+    "20_SESSION_FULL_CHAIN_VOLUME_HISTORY"
+  ],
+  "browser_verification": "UNVERIFIED_PUBLIC_UPSTREAM_CONNECTION_FAILURE"
+}

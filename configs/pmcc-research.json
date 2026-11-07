@@ -1,0 +1,16 @@
+{
+  "study_id": "PMCC-RESEARCH-001",
+  "paper_trade_mode": true,
+  "live_trading_enabled": false,
+  "broker_execution_enabled": false,
+  "order_placement_enabled": false,
+  "capital_movement_enabled": false,
+  "fee_per_contract": 0.65,
+  "long_time_premium_cap_dollars": 60,
+  "linked_itm_shadow": true,
+  "allow_itm_width_risk": true,
+  "execution_default": "OBSERVE_ONLY",
+  "capital_note": "Each profile is an independent 5000-dollar shadow benchmark, not additional platform funding.",
+  "discovery_source": "INDEPENDENT_PMCC_OBSERVATIONS",
+  "study_note": "ITM negative exercise cushion is disclosed and permitted only in this isolated study; existing PMCC-001 execution gates are unchanged."
+}

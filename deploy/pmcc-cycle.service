@@ -1,0 +1,16 @@
+[Unit]
+Description=PMCC-001 local paper scan and position management
+After=network-online.target
+[Service]
+Type=oneshot
+User=tradebot
+Group=tradebot
+WorkingDirectory=/home/tradebot/Trade-PMCC-Bot
+ExecStartPre=-/usr/bin/python3 -m pmcc refresh
+ExecStart=/usr/bin/python3 -m pmcc cycle
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/tradebot/Trade-PMCC-Bot/state /home/tradebot/Trade-PMCC-Bot/results
